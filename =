@@ -94,7 +94,7 @@ while true; do
 
     case "$action" in
         "Clear") answer= ;;
-        "Copy") wl-copy "$answer";;
+        "Copy") wl-copy -- "$answer";;
         "Close"|"") exit ;;
         *) answer=$(process_query "$answer $action") ;;
     esac
